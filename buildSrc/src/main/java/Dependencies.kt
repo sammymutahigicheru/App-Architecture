@@ -88,8 +88,8 @@ object Libraries {
     // Gson
     const val gson = "com.squareup.retrofit2:converter-gson:${Versions.gson}"
 
-    // DI - KOIN
-    const val koin = "com.google.dagger:hilt-android:${Versions.hilt}"
+    // DI - HILT
+    const val hilt = "com.google.dagger:hilt-android:${Versions.hilt}"
     const val hiltKapt = "com.google.dagger:hilt-compile:${Versions.hilt}"
 
     // Room db
