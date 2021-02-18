@@ -5,17 +5,17 @@ on:
     branches: [ develop ]
 
 env:
-  APP_SIGN_KEYSTORE_PATH: /tmp/keystore
+#  APP_SIGN_KEYSTORE_PATH: /tmp/keystore
   CACHE_BUNDLER: ~/.bundler
 
 jobs:
   build:
     runs-on: windows-latest
     steps:
-      - name: Write key file
-        env:
-          AUTH: ${{ secrets.QA_KEYSTORE }}
-        run: echo $AUTH | base64 --decode > /tmp/keystore
+#      - name: Write key file
+#        env:
+#          AUTH: ${{ secrets.QA_KEYSTORE }}
+#        run: echo $AUTH | base64 --decode > /tmp/keystore
 
       - name: Checkout the repository
         uses: actions/checkout@v2
