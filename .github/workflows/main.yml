@@ -41,11 +41,11 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-gems-
 
-      - name: fastlane release
-        uses: maierj/fastlane-action@v1.4.0
-        with:
-          lane: release
-          options: '{ "conf": "release" }'
-          skip-tracking: false
-          subdirectory: fastlane
-          bundle-install-path: CACHE_BUNDLER
+#      - name: fastlane release
+#        uses: maierj/fastlane-action@v1.4.0
+#        with:
+#          lane: release
+#          options: '{ "conf": "release" }'
+#          skip-tracking: false
+#          subdirectory: fastlane
+#          bundle-install-path: CACHE_BUNDLER
