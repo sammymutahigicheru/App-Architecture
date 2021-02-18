@@ -41,11 +41,11 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-gems-
 
-      - name: fastlane android test
-        uses: maierj/fastlane-action@v1.4.0
-        with:
-          lane: branch
-          options: '{ "conf": "debug" }'
-          skip-tracking: false
-          subdirectory: fastlane
-          bundle-install-path: CACHE_BUNDLER
+#      - name: fastlane android test
+#        uses: maierj/fastlane-action@v1.4.0
+#        with:
+#          lane: branch
+#          options: '{ "conf": "debug" }'
+#          skip-tracking: false
+#          subdirectory: fastlane
+#          bundle-install-path: CACHE_BUNDLER
